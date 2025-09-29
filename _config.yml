@@ -55,6 +55,10 @@ webmaster_verifications:
   baidu: # fill in your Baidu verification code
   facebook: # fill in your Facebook verification code
 
+# SEO Settings
+author: D K Bhargav Achary
+keywords: [hardware development, computer architecture, AI systems, embedded design, performance optimization, technical blogging]
+
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
