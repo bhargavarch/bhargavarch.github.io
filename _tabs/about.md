@@ -34,7 +34,7 @@ This is my digital workshop and storytelling hub—a place to share insights fro
 
 ## Connect
 
-- **GitHub**: [@bhargavarch](https://github.com/bhargavarch)
+- **GitHub**: [@dkbachary](https://github.com/dkbachary)
 - **Twitter**: [@bhargav_achary](https://twitter.com/bhargav_achary)
 - **Email**: [bhargav.achary13@gmail.com](mailto:bhargav.achary13@gmail.com)
 
