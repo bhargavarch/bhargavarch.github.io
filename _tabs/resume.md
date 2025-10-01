@@ -25,7 +25,7 @@ title: Resume
 
 ---
 
-## 🚀 Professional Experience
+## 🚀 Professional Experience {#professional-experience}
 
 ### **Senior Software Engineer**
 **[Company Name]** • *[Date Range]*
