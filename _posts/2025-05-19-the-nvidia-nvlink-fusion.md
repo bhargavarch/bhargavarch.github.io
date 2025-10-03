@@ -11,7 +11,7 @@ image:
   alt: "NVLink Fusion: NVIDIA's Bold Step Towards Unified AI Memory Architectures"
 ---
 
-Imagine if your brain and your hands had to write letters to each other before doing anything—now imagine if they just shared thoughts instantly. That's exactly the kind of leap NVLink Fusion brings to computers.
+Imagine if your brain and your hands had to write letters to each other before doing anything-now imagine if they just shared thoughts instantly. That's exactly the kind of leap NVLink Fusion brings to computers.
 
 At Computex 2025, NVIDIA unveiled NVLink Fusion, a breakthrough that’s changing how computers think, talk, and work together. By letting CPUs and GPUs share memory as if it were a single brain, NVIDIA has eliminated one of the biggest barriers in AI and scientific computing.
 
@@ -23,7 +23,7 @@ This post unpacks NVLink Fusion in a way that makes sense to both tech enthusias
 
 In today's AI systems, the CPU and GPU are like two athletes running a relay race. The CPU starts running with data and then has to pass the baton (data) to the GPU using an interconnect like PCIe.
 
-That pass—called DMA transfer—is slow, wasteful, and kind of outdated.
+That pass-called DMA transfer-is slow, wasteful, and kind of outdated.
 
 - For every step forward, there’s time lost in data copying.
 - AI models like ChatGPT or Google Gemini are so big, the back-and-forth is painful.
@@ -31,7 +31,7 @@ That pass—called DMA transfer—is slow, wasteful, and kind of outdated.
 
 It’s like watching a WhatsApp message get delivered via postal mail. Why not just message directly?
 
-NVLink Fusion is that instant messaging. No more baton passing—just shared thinking.
+NVLink Fusion is that instant messaging. No more baton passing-just shared thinking.
 
 ---
 
@@ -44,7 +44,7 @@ They now sit in the same room, look at the same notebook, and work on the same p
 In technical terms:
 - NVLink Fusion creates a unified, shared memory between CPU and GPU.
 - It enables cache coherence, which means both can see the latest data without asking for updates.
-- Bandwidth? Up to 1.8 TB/s—that’s like downloading the entire Netflix library every second (well, almost).
+- Bandwidth? Up to 1.8 TB/s-that’s like downloading the entire Netflix library every second (well, almost).
 
 ---
 
@@ -66,7 +66,7 @@ Less memory copying = less wasted energy = lower carbon footprints for cloud com
 
 ---
 
-## 4. Okay, Techies—Let’s Talk Internals
+## 4. Okay, Techies-Let’s Talk Internals
 
 For those of you who live inside the hardware stack, here's the cool stuff:
 
@@ -84,8 +84,8 @@ Smart MMU (NVMMU)
 - Works beautifully with CUDA, NCCL, and MPI workflows.
 
 x86 Compatibility  
-- Early support for AMD and Intel CPUs—a big shift from NVIDIA’s closed past.
-- Fusion isn’t just for Grace (ARM)—it's becoming vendor-neutral.
+- Early support for AMD and Intel CPUs-a big shift from NVIDIA’s closed past.
+- Fusion isn’t just for Grace (ARM)-it's becoming vendor-neutral.
 
 ---
 
@@ -98,7 +98,7 @@ Autonomous Vehicles | Real-time decisions on the road
 Weather Prediction | Faster and more accurate cyclone forecasts  
 Edge AI (phones, drones) | High-end AI inference, lower power drain  
 
-Fusion is already in action powering NVIDIA’s DGX GB200 NVL72 supercomputers—massive machines with Grace CPUs + Blackwell GPUs, all talking on a single memory bus.
+Fusion is already in action powering NVIDIA’s DGX GB200 NVL72 supercomputers-massive machines with Grace CPUs + Blackwell GPUs, all talking on a single memory bus.
 
 That’s like an orchestra playing without a conductor, yet somehow still perfectly in tune.
 
@@ -114,11 +114,11 @@ AMD
 
 Qualcomm & MediaTek  
 - Exploring Fusion-inspired architectures for phones and IoT.  
-- Imagine your phone's CPU and AI engine working on the same image buffer—no delay, no energy waste.
+- Imagine your phone's CPU and AI engine working on the same image buffer-no delay, no energy waste.
 
 UCIe & CXL Ecosystem  
 - Fusion may become the foundation for chiplet-based, modular systems.  
-- Think LEGO bricks of compute, memory, and AI cores—all talking freely.
+- Think LEGO bricks of compute, memory, and AI cores-all talking freely.
 
 ---
 
@@ -126,9 +126,9 @@ UCIe & CXL Ecosystem
 
 Of course, it’s not all sunshine and silicon. NVLink Fusion brings challenges:
 
-- Higher power draw—coherent fabrics consume more energy.
-- Complex board designs—routing NVLink and NVSwitch is no small feat.
-- Software maturity—CUDA, NCCL, and OS schedulers need fine-tuning.
+- Higher power draw-coherent fabrics consume more energy.
+- Complex board designs-routing NVLink and NVSwitch is no small feat.
+- Software maturity-CUDA, NCCL, and OS schedulers need fine-tuning.
 
 But if history tells us anything, NVIDIA knows how to solve platform problems with developer-first thinking.
 
@@ -152,9 +152,9 @@ This is just the beginning.
 
 ## Conclusion
 
-NVLink Fusion isn’t just a faster wire—it’s a better way to think. It brings CPUs and GPUs together as true collaborators, not just teammates exchanging emails.
+NVLink Fusion isn’t just a faster wire-it’s a better way to think. It brings CPUs and GPUs together as true collaborators, not just teammates exchanging emails.
 
-Whether you're training trillion-parameter AI models, building the next killer app, or just using your smartphone's camera—Fusion makes things faster, smoother, and smarter behind the scenes.
+Whether you're training trillion-parameter AI models, building the next killer app, or just using your smartphone's camera-Fusion makes things faster, smoother, and smarter behind the scenes.
 
 And perhaps most importantly, it’s a sign that the computing world is finally realizing:
 

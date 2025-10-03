@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-👋 Hi, I'm **Bhargav Achary** — Hardware Developer, Computer Architecture Specialist, and Tech Analyst.
+👋 Hi, I'm **Bhargav Achary** - Hardware Developer, Computer Architecture Specialist, and Tech Analyst.
 
 I dissect cutting-edge technology through the lens of a systems engineer who understands both the silicon and the story behind it.
 
@@ -45,14 +45,14 @@ Real-world performance data, deployment strategies, and lessons from the bleedin
 
 This is where hardware meets AI, where hype meets reality, and where complex systems get explained without losing the technical depth.
 
-I write for engineers, tech enthusiasts, and anyone curious about **what's actually happening** beneath the marketing slides—from silicon design to AI deployment, from edge devices to data centers.
+I write for engineers, tech enthusiasts, and anyone curious about **what's actually happening** beneath the marketing slides: from silicon design to AI deployment, from edge devices to data centers.
 
 ## 🔗 Connect
 
-- **GitHub**: [@dkbachary](https://github.com/dkbachary) | [@bhargavachary](https://github.com/bhargavachary)
+- **GitHub**: [@dkbachary](https://github.com/dkbachary)
 - **Twitter**: [@bhargav_achary](https://twitter.com/bhargav_achary)
 - **Email**: [bhargav.achary13@gmail.com](mailto:bhargav.achary13@gmail.com)
 
 ---
 
-**The Journey**: From RTL debugging to AI inference, from chip architecture to cloud infrastructure—this is my engineering log. Silicon, systems, and stories worth sharing.
+**The Journey**: From RTL debugging to AI inference, from chip architecture to cloud infrastructure - this is my engineering log. Silicon, systems, and stories worth sharing.

@@ -13,7 +13,7 @@ image:
 
 After exploring various blogging platforms like WordPress, Drupal, and Blogger, I initially thought WordPress would be ideal for its flexibility and ease of use. Hosting with a reputed provider seemed like the obvious plan.
 
-However, I began to wonder—what if hosting providers raised prices, restricted traffic, or altered policies? This led me to discover **GitHub Pages** and **Jekyll**, which offered a minimalist, flexible alternative.
+However, I began to wonder-what if hosting providers raised prices, restricted traffic, or altered policies? This led me to discover **GitHub Pages** and **Jekyll**, which offered a minimalist, flexible alternative.
 
 ## Why I Chose GitHub and Jekyll
 
@@ -38,7 +38,7 @@ Here’s how you can create your own GitHub-hosted website using Jekyll:
 
 ## Personal Observations and Learning
 
-Setting up a GitHub-hosted blog isn’t just cost-effective—it’s liberating. While newcomers might find Git, Markdown, or Jekyll intimidating at first, the learning curve is rewarding. With this setup, you own your content entirely and enjoy unparalleled flexibility.
+Setting up a GitHub-hosted blog isn’t just cost-effective-it’s liberating. While newcomers might find Git, Markdown, or Jekyll intimidating at first, the learning curve is rewarding. With this setup, you own your content entirely and enjoy unparalleled flexibility.
 
 ### Why Static Sites Could Be the Future
 
@@ -50,7 +50,7 @@ The simplicity of static site generators like Jekyll, paired with the robustness
 
 ## Final Thoughts
 
-Setting up a GitHub-hosted Jekyll blog has been a rewarding journey. It not only allowed me to focus on what matters—writing and sharing—but also taught me invaluable lessons about web development, hosting, and open-source tools.
+Setting up a GitHub-hosted Jekyll blog has been a rewarding journey. It not only allowed me to focus on what matters-writing and sharing-but also taught me invaluable lessons about web development, hosting, and open-source tools.
 
 If you’re considering starting a blog or moving your existing one to GitHub, give this method a try. It might just be the minimalist, cost-effective solution you’ve been searching for.
 

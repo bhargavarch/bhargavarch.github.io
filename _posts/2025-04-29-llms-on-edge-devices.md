@@ -5,21 +5,21 @@ date: 2025-04-29
 categories: [Artificial Intelligence, Hardware & Architecture]
 tags: [edge-ai, llms, inference, apple, qualcomm]
 toc: true
-description: "M-series, Snapdragon X Elite, AMD Phoenix, Intel Meteor Lake — the most powerful SoCs ever made for consumers. But even they struggle with running large language models locally. Here's why edge AI inference hits roadblocks, and what the future holds."
+description: "M-series, Snapdragon X Elite, AMD Phoenix, Intel Meteor Lake - the most powerful SoCs ever made for consumers. But even they struggle with running large language models locally. Here's why edge AI inference hits roadblocks, and what the future holds."
 image:
   path: /images/posts/edge-ai-computing.jpg
   alt: "Edge AI Inference: Built Like a Rocket, Stuck in Bangalore Traffic"
 ---
 
-M-series, Snapdragon X Elite, AMD Phoenix, Intel Meteor Lake — the most powerful SoCs ever made for consumers. But even they struggle with running large language models locally. Here's why edge AI inference hits roadblocks, and what the future holds.
+M-series, Snapdragon X Elite, AMD Phoenix, Intel Meteor Lake - the most powerful SoCs ever made for consumers. But even they struggle with running large language models locally. Here's why edge AI inference hits roadblocks, and what the future holds.
 
-**How Apple, AMD, Intel, and Qualcomm hit the limits of on-device AI — and what it really takes to run LLMs locally**
+**How Apple, AMD, Intel, and Qualcomm hit the limits of on-device AI - and what it really takes to run LLMs locally**
 
 ---
 
 ## **1. From WWDC Hype to Edge AI Hope**
 
-It was a Bengaluru morning like any other — clouds hanging low, the comforting aroma of filter coffee, and Apple’s WWDC streaming in the background. The phrase *Apple Intelligence* lit up the screen — a perfect blend of marketing brilliance and technical aspiration. I’ll admit, I leaned forward.
+It was a Bengaluru morning like any other - clouds hanging low, the comforting aroma of filter coffee, and Apple’s WWDC streaming in the background. The phrase *Apple Intelligence* lit up the screen - a perfect blend of marketing brilliance and technical aspiration. I’ll admit, I leaned forward.
 
 After a decade of debugging system bottlenecks and watching AI gradually seep from server racks into silicon, this felt like a moment. M-series chips. Unified memory. Local LLMs. It had finally arrived.
 
@@ -67,7 +67,7 @@ Even Apple’s M3 Pro at 150+ GB/s pales in comparison to data center GPUs like 
 
 ### ⚙️ Roofline Limits
 
-Low arithmetic intensity in LLM layers means even 100 TOPS NPUs can sit idle — starving for data.
+Low arithmetic intensity in LLM layers means even 100 TOPS NPUs can sit idle - starving for data.
 
 ### 🔥 Thermal Throttling
 
@@ -77,7 +77,7 @@ Edge devices are built for bursts, not endurance. Sustained inference on a thin 
 
 ## **4. Quantization: How Small Can You Go?**
 
-Quantization is essential — but risky.
+Quantization is essential - but risky.
 
 | **Format** | **Memory Use** | **Accuracy** | **Notes** |
 |-----------|----------------|--------------|-----------|
@@ -86,7 +86,7 @@ Quantization is essential — but risky.
 | **INT4**  | ~12.5%          | Noticeable loss | Use GPTQ or QLoRA |
 | **INT3**  | ~9%             | High risk     | Often “robotic” responses |
 
-> *From FLAC to MP3 to ringtone — there’s a breaking point.*
+> *From FLAC to MP3 to ringtone - there’s a breaking point.*
 
 INT4 gets 7B models on 8 GB RAM, but coherence suffers without careful tuning.
 
@@ -100,7 +100,7 @@ Portable, but lacks optimal kernels. Apple M1/M2 performance often slower than C
 
 ### Core ML / MLX
 
-Fastest option on Apple — if you use `llama.cpp` with Metal. Avoid PyTorch on MPS unless you enjoy waiting.
+Fastest option on Apple - if you use `llama.cpp` with Metal. Avoid PyTorch on MPS unless you enjoy waiting.
 
 ### DirectML
 
@@ -125,7 +125,7 @@ Apple leads due to software-hardware synergy. Others have potential, but runtime
 
 ## **7. Why 7B Isn’t Enough**
 
-7B models don’t have the depth or nuance we expect from ChatGPT-level experiences — especially after quantization.
+7B models don’t have the depth or nuance we expect from ChatGPT-level experiences - especially after quantization.
 
 > *You don’t need GPT-4 for grocery lists. But don’t expect a 7B model to write your wedding vows.*
 
@@ -165,13 +165,13 @@ Let’s stop calling 7B INT4 a “GPT-4 competitor.” It’s not. Not yet.
 
 Edge AI feels a lot like Bengaluru’s road network: intelligent intentions, brilliant engineers, and… bottlenecks at every corner.
 
-We’ve got great engines — M3 Max, X Elite, Phoenix — but our road (runtime maturity, bandwidth, quantization quality) is full of potholes.
+We’ve got great engines - M3 Max, X Elite, Phoenix - but our road (runtime maturity, bandwidth, quantization quality) is full of potholes.
 
 > *“Kya karein, traffic toh hai.”* But that doesn’t mean we stop building.
 
 There’s progress. Tools like `llama.cpp`, MLX, ONNX, and Core ML are improving. Next-gen chips (M4, Strix, Arrow Lake) will lift ceilings further.
 
-And maybe, just maybe, the future of AI won’t live in cloud clusters — it’ll run right from your laptop bag.
+And maybe, just maybe, the future of AI won’t live in cloud clusters - it’ll run right from your laptop bag.
 
 While we just focused on LLMs for this article, we need to appreciate the fact that DNN-inference especially relevant to image, video, speech processing have progressed significantly and we cannot discard their significance just because the client/edge systems are still *"Not LLM ready".*
 
@@ -181,7 +181,7 @@ While we just focused on LLMs for this article, we need to appreciate the fact t
 
 Have you tried running LLMs on your Mac, PC, or ARM laptop?
 
-Drop your comments, exeriences, benchmarks, pain points, or clever hacks in the comments or tag [@bhargavachary](https://bhargavachary.in) — let’s build this road together.
+Drop your comments, exeriences, benchmarks, pain points, or clever hacks in the comments or tag [@bhargavachary](https://bhargavachary.in) - let’s build this road together.
 
 ---
 

@@ -5,13 +5,13 @@ date: 2024-06-11 00:00:00 +0530
 categories: [Artificial Intelligence, Hardware & Architecture]
 tags: [apple, ai-models, ios, wwdc]
 toc: true
-description: "Today, at the much-anticipated WWDC 2024, Apple unveiled its latest marvel—Apple Intelligence. While AI integration isn't a novel concept, Apple's execution and integration across its ecosystem are truly remarkable."
+description: "Today, at the much-anticipated WWDC 2024, Apple unveiled its latest marvel-Apple Intelligence. While AI integration isn't a novel concept, Apple's execution and integration across its ecosystem are truly remarkable."
 image:
   path: /images/posts/apple-intelligence.jpg
   alt: "Apple Intelligence: The Seamless AI in Apple's Ecosystem"
 ---
 
-Today, at the much-anticipated WWDC 2024, Apple unveiled its latest marvel—Apple Intelligence. While AI integration isn't a novel concept, Apple's execution and integration across its ecosystem are truly remarkable.
+Today, at the much-anticipated WWDC 2024, Apple unveiled its latest marvel-Apple Intelligence. While AI integration isn't a novel concept, Apple's execution and integration across its ecosystem are truly remarkable.
 
 ### The Familiar, Wrapped in Apple's Elegance
 
@@ -31,7 +31,7 @@ Apple's unique position allows it to leverage hardware-software co-design princi
 
 Despite impressive execution, some argue that Apple Intelligence doesn't introduce radically new features. Enhancements to Siri represent a gradual evolution rather than a revolutionary leap. AI-powered emojis and real-time summarization, though useful, have been explored by other companies.
 
-Moreover, Apple's focus on personalization and customization in iOS 18—allowing users to rearrange home screen icons and customize the Control Centre—feels like catching up to what Android users have enjoyed for years. These updates enhance the user experience but don't necessarily break new ground.
+Moreover, Apple's focus on personalization and customization in iOS 18-allowing users to rearrange home screen icons and customize the Control Centre-feels like catching up to what Android users have enjoyed for years. These updates enhance the user experience but don't necessarily break new ground.
 
 ### Conclusion: A Balance of Criticism and Appreciation
 

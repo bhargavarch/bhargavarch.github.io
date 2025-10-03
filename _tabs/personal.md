@@ -9,14 +9,14 @@ title: Personal
 
 Outside the world of processors and architectures, I find meaning in simpler, quieter pursuits.
 
-Growing up in Odisha, I learned that life's richest lessons often come from unexpected places—village roads, family gatherings, train journeys across India's heartland. These experiences shaped how I see the world, both as an engineer and as someone trying to understand what it means to be human in a rapidly changing time.
+Growing up in Odisha, I learned that life's richest lessons often come from unexpected places-village roads, family gatherings, train journeys across India's heartland. These experiences shaped how I see the world, both as an engineer and as someone trying to understand what it means to be human in a rapidly changing time.
 
 ## What You'll Find
 
 On my personal blog, I write about the parts of life that don't fit neatly into technical specs:
 
 **Photography & Visual Stories**
-Capturing moments that remind us to pause—landscapes, culture, and everyday beauty.
+Capturing moments that remind us to pause-landscapes, culture, and everyday beauty.
 
 **Reflections & Essays**
 Thoughts on society, mental health, education, and the stories we inherit from those who came before us.
@@ -35,4 +35,4 @@ If you're curious about the person behind the technical analysis, or simply want
 
 ---
 
-*Between debugging sessions and architecture reviews, I try to remember that technology exists to serve humanity—not the other way around.*
+*Between debugging sessions and architecture reviews, I try to remember that technology exists to serve humanity-not the other way around.*

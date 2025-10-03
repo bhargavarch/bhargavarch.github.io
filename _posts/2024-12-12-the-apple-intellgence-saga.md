@@ -13,7 +13,7 @@ image:
 
 In my recent blog, ["Apple Intelligence: The Seamless AI in Apple’s Ecosystem"](https://bhargavachary.in/2024/06/11/the-apple-intelligence-unveiled.html), I was brimming with optimism. Apple had unveiled its latest marvel, Apple Intelligence, and the potential for seamless integration, enhanced productivity, and smarter devices felt like a turning point. The promise of a future where AI wasn’t just an add-on but a cornerstone of the Apple ecosystem had me captivated.
 
-So much so that I made a leap of faith—a leap that, looking back, has left me questioning not only the technology but also my decisions as a tech enthusiast.
+So much so that I made a leap of faith-a leap that, looking back, has left me questioning not only the technology but also my decisions as a tech enthusiast.
 
 ### A Sacrifice Fueled by Hype
 
@@ -34,7 +34,7 @@ But the beta experience was, to put it mildly, disappointing.
    While the concept of dynamic emojis sounded exciting, the actual implementation was more novelty than necessity. It added little to my daily interactions.
 
 3. **Performance Woes**  
-   As expected of beta software, there were bugs galore—apps crashing, battery draining rapidly, and some features outright refusing to work. But what made it worse was realizing that these weren’t just beta issues; the core AI features themselves lacked depth and innovation.
+   As expected of beta software, there were bugs galore-apps crashing, battery draining rapidly, and some features outright refusing to work. But what made it worse was realizing that these weren’t just beta issues; the core AI features themselves lacked depth and innovation.
 
 ### The Gap Between Hype and Reality
 
@@ -46,7 +46,7 @@ Apple Intelligence felt more like a cautious step forward than the transformativ
 
 The disappointment wasn’t just about the technology. It was about the personal sacrifices I had made to own this flagship device. In hindsight, sticking with an older iPhone model would have saved me a significant amount of money without sacrificing much functionality.
 
-This experience has been a harsh reminder of the cost of buying into hype—financially, emotionally, and intellectually. The iPhone 16 Plus, while an excellent device, hasn’t lived up to its promise of being a gateway to the future of AI. Instead, it’s become a symbol of unfulfilled expectations.
+This experience has been a harsh reminder of the cost of buying into hype-financially, emotionally, and intellectually. The iPhone 16 Plus, while an excellent device, hasn’t lived up to its promise of being a gateway to the future of AI. Instead, it’s become a symbol of unfulfilled expectations.
 
 ### Where Apple Needs to Improve
 
