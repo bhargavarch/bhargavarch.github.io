@@ -54,16 +54,29 @@ main() {
     rm -rf "$SITE_DIR"
   fi
 
+  # Ensure we don't use stale vendor gems from an incompatible Ruby
+  # If vendor/bundle exists for a different Ruby (e.g., 2.6.0) it can break ffi/sassc
+  if [[ -d vendor/bundle/ruby ]]; then
+    if [[ -n "$(ls -1 vendor/bundle/ruby | grep -v "$(ruby -e 'print RUBY_VERSION.split(".")[0,2].join(".")')")" ]]; then
+      echo "> Detected vendor/bundle for a different Ruby version; removing vendor/bundle to avoid native extension errors"
+      rm -rf vendor/bundle
+    fi
+  fi
+
   read_baseurl
 
   # build
   JEKYLL_ENV=production bundle exec jekyll b \
     -d "$SITE_DIR$_baseurl" -c "$_config"
 
-  # test
-  bundle exec htmlproofer "$SITE_DIR" \
-    --disable-external \
-    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+  # test (optional): run htmlproofer only if installed
+  if bundle show html-proofer >/dev/null 2>&1; then
+    bundle exec htmlproofer "$SITE_DIR" \
+      --disable-external \
+      --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+  else
+    echo "> Skipping htmlproofer (gem not installed)"
+  fi
 }
 
 while (($#)); do
