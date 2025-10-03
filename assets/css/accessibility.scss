@@ -1,0 +1,192 @@
+---
+# Accessibility Enhancements for Chirpy Theme
+# Ensures WCAG 2.1 Level AA compliance
+---
+
+/*
+ * Reduced Motion Support (WCAG 2.1 Success Criterion 2.3.3)
+ * Respects user's motion preferences for vestibular disorders, seizures, and motion sickness
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    /* Reduce animations to near-instant (not 0 to avoid breaking JS) */
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    /* Reduce transitions to near-instant */
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+
+    /* Disable scroll behavior smooth scrolling */
+    scroll-behavior: auto !important;
+  }
+
+  /* Specific overrides for critical animations */
+  .shimmer::before {
+    animation: none !important;
+  }
+
+  #toc-wrapper {
+    animation: none !important;
+  }
+
+  #notification.toast.show {
+    animation: none !important;
+  }
+
+  /* Preserve functional transforms but remove transitions */
+  [sidebar-display] #sidebar,
+  [sidebar-display] #main-wrapper {
+    transition: none !important;
+  }
+}
+
+/*
+ * Enhanced Focus Indicators (WCAG 2.1 Success Criterion 2.4.7)
+ * Ensures keyboard navigation is clearly visible
+ */
+
+/* High contrast focus ring for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 3px solid var(--focus-ring-color, #4a9eff);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Dark mode focus color */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --focus-ring-color: #8ab4f8;
+  }
+}
+
+/* Remove default focus styles that are replaced */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Enhanced focus for navigation items */
+.nav-link:focus-visible {
+  outline: 3px solid var(--focus-ring-color);
+  outline-offset: -3px;
+}
+
+/* Focus for post cards */
+.post-preview:focus-within,
+.card-wrapper:focus-within {
+  outline: 3px solid var(--focus-ring-color);
+  outline-offset: 3px;
+}
+
+/* Focus for TOC links */
+.toc-link:focus-visible {
+  outline: 2px solid var(--toc-highlight);
+  outline-offset: 2px;
+  background-color: var(--sidebar-hover-bg);
+}
+
+/* Search input focus enhancement */
+#search-input:focus-visible {
+  outline: 3px solid var(--focus-ring-color);
+  outline-offset: 1px;
+}
+
+/* Back to top button focus */
+#back-to-top:focus-visible {
+  outline: 3px solid var(--focus-ring-color);
+  outline-offset: 3px;
+  transform: translate3d(0, -5px, 0);
+}
+
+/* Sidebar controls focus */
+.sidebar-bottom a:focus-visible,
+.mode-toggle:focus-visible {
+  outline: 2px solid var(--focus-ring-color);
+  outline-offset: 2px;
+}
+
+/* Skip link (to be added to HTML) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--main-bg);
+  color: var(--link-color);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--focus-ring-color);
+}
+
+/*
+ * Improved Color Contrast for Small Elements
+ */
+
+/* Ensure sidebar buttons meet 4.5:1 ratio */
+.sidebar-bottom .mode-toggle,
+.sidebar-bottom a {
+  color: #6b6b6b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sidebar-bottom .mode-toggle,
+  .sidebar-bottom a {
+    color: #9e9e9e;
+  }
+}
+
+/*
+ * Print Styles - Accessibility for printed content
+ */
+
+@media print {
+  /* Remove animations in print */
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Ensure good contrast for print */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  a {
+    color: #0000EE !important;
+    text-decoration: underline !important;
+  }
+
+  /* Show link URLs in print */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  /* Hide non-essential elements */
+  #sidebar,
+  #topbar-wrapper,
+  #back-to-top,
+  .share-wrapper,
+  nav {
+    display: none !important;
+  }
+}

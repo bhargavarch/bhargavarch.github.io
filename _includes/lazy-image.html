@@ -1,0 +1,19 @@
+{% comment %}
+  Lazy Loading Image Include
+  Usage: {% include lazy-image.html src="/path/to/image.jpg" alt="Description" %}
+  Optional: width, height, class, loading (lazy|eager)
+{% endcomment %}
+
+{% assign loading_attr = include.loading | default: "lazy" %}
+{% assign img_class = include.class | default: "" %}
+
+<img
+  src="{{ include.src | relative_url }}"
+  alt="{{ include.alt | default: '' }}"
+  {% if include.width %}width="{{ include.width }}"{% endif %}
+  {% if include.height %}height="{{ include.height }}"{% endif %}
+  {% if img_class != "" %}class="{{ img_class }}"{% endif %}
+  loading="{{ loading_attr }}"
+  decoding="async"
+  onerror="this.style.display='none'"
+>
