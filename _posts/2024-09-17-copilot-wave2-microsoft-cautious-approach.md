@@ -2,8 +2,8 @@
 layout: post
 title: "Microsoft Copilot Wave 2: Navigating the AI Frontier with Caution and Precision"
 date: 2024-09-17
-categories: [Artificial Intelligence, Technology]
-tags: [microsoft-copilot, ai-enhancements, sharepoint, onedrive, excel, productivity]
+categories: [Artificial Intelligence, Industry Analysis]
+tags: [microsoft, ai-models, productivity, enterprise-ai]
 toc: true
 description: "Microsoft's Copilot Wave 2 brings AI enhancements across their ecosystem, but are we moving at a pace that's cautious enough? Exploring the balance between AI innovation and responsible deployment."
 image:

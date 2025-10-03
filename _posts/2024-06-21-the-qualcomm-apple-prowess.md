@@ -2,8 +2,8 @@
 layout: post
 title: "Snapdragon X Elite vs. Apple M3: The Ultimate Computing Prowess"
 date: 2024-06-21 00:00:00 +0530
-categories: [Technology]
-tags: [technology, hardware, qualcomm, apple, processors, performance, ai]
+categories: [Hardware & Architecture]
+tags: [qualcomm, apple, processors, performance-analysis]
 toc: true
 description: "Hello my dear reader, I welcome you to another tech analysis blog. Let's get started on this interesting article on Apple vs Who? The battle between chip giants Qualcomm and Apple continues to captivate tech enthusiasts and professionals alike. At the much-anticipated showdown of 2024, two titans have emerged: the Snapdragon X Elite and Apple's M Series."
 image:

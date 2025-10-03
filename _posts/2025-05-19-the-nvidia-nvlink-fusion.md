@@ -2,8 +2,8 @@
 layout: post
 title: "NVLink Fusion: NVIDIA's Bold Step Towards Unified AI Memory Architectures"
 date: 2025-05-19
-categories: [Technology, System Engineering]
-tags: [nvidia, nvlink, ai, memory-architecture, hpc, semiconductors, system-design]
+categories: [Hardware & Architecture]
+tags: [nvidia, memory-architecture, system-design, hpc, semiconductors]
 toc: true
 description: "NVIDIA's NVLink Fusion revolutionizes AI computing by creating unified memory architectures that eliminate CPU-GPU data transfer bottlenecks, enabling direct memory sharing for breakthrough performance in large language models and scientific computing."
 image:

@@ -2,8 +2,8 @@
 layout: post
 title: "Intel's Lunar Lake Revenge: Taking on Apple's M-Series"
 date: 2024-09-05 00:00:00 +0530
-categories: [Technology]
-tags: [technology, intel, hardware, ai, processors, innovation, computing]
+categories: [Hardware & Architecture, Artificial Intelligence]
+tags: [intel, processors, ai-hardware, performance-analysis]
 toc: true
 description: "Intel's Core Ultra 200V series marks a pivotal moment in laptop processing, competing directly with Apple's M-series and Qualcomm's Snapdragon X Elite. This article explores the hybrid architecture, AI-driven performance, and multi-threaded computing that define Intel's comeback."
 image:

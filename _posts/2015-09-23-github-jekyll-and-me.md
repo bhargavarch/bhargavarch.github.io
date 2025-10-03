@@ -2,8 +2,8 @@
 layout: post
 title: "GitHub, Jekyll, and Me!"
 date: 2015-09-23 00:00:00 +0530
-categories: [Technology, Personal Growth]
-tags: [technology, blogging, open-source, web-development, personal-reflection]
+categories: [Software & Development]
+tags: [blogging, open-source, web-development]
 toc: true
 description: "After exploring various blogging platforms like WordPress, Drupal, and Blogger, I initially thought WordPress would be ideal for its flexibility and ease of use. Hosting with a reputed provider seemed like the obvious plan."
 image:

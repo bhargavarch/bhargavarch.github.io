@@ -2,8 +2,8 @@
 layout: post
 title: "Apple Intelligence: The Seamless AI in Apple's Ecosystem"
 date: 2024-06-11 00:00:00 +0530
-categories: [Technology]
-tags: [apple, ai, technology, innovation, wwdc, ios, ecosystem]
+categories: [Artificial Intelligence, Hardware & Architecture]
+tags: [apple, ai-models, ios, wwdc]
 toc: true
 description: "Today, at the much-anticipated WWDC 2024, Apple unveiled its latest marvel—Apple Intelligence. While AI integration isn't a novel concept, Apple's execution and integration across its ecosystem are truly remarkable."
 image:

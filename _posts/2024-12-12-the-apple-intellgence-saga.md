@@ -2,8 +2,8 @@
 layout: post
 title: "The Apple Intelligence Saga: From Hype to Disappointment"
 date: 2024-12-12 00:00:00 +0530
-categories: [Technology, Personal Growth]
-tags: [apple, ai, technology, product-review, personal-reflection, consumer-experience]
+categories: [Artificial Intelligence, Industry Analysis]
+tags: [apple, ai-models, product-review]
 toc: true
 description: "In my recent blog, 'Apple Intelligence: The Seamless AI in Apple's Ecosystem', I was brimming with optimism. Apple had unveiled its latest marvel, Apple Intelligence, and the potential for seamless integration, enhanced productivity, and smarter devices felt like a turning point. The promise of a future where AI wasn't just an add-on but a cornerstone of the Apple ecosystem had me captivated."
 image:

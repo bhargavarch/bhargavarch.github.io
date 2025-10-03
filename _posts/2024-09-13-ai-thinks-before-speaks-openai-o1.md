@@ -2,8 +2,8 @@
 layout: post
 title: "OpenAI o1: The AI That Thinks Before It Speaks"
 date: 2024-09-13 00:00:00 +0530
-categories: [Technology, Education & Academia]
-tags: [ai, openai, technology, machine-learning, innovation, future-of-work]
+categories: [Artificial Intelligence]
+tags: [openai, machine-learning, ai-models, reasoning]
 toc: true
 description: "The world of AI is evolving, and OpenAI's o1 series isn't just about speed—it's about thinking before answering. This revolutionary AI goes beyond quick fixes, offering deep reasoning, step-by-step debugging, and human-like guidance. In this post, we explore how OpenAI o1 transforms the developer experience, stacks up against competitors like ClaudeAI and Google Gemini, and what it means for the future of learning and reskilling. It's not just about what we teach the next generation—but how we teach them to think."
 image:

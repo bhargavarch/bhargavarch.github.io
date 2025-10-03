@@ -49,7 +49,7 @@ I write for engineers, tech enthusiasts, and anyone curious about **what's actua
 
 ## 🔗 Connect
 
-- **GitHub**: [@dkbachary](https://github.com/dkbachary)
+- **GitHub**: [@dkbachary](https://github.com/dkbachary) | [@bhargavachary](https://github.com/bhargavachary)
 - **Twitter**: [@bhargav_achary](https://twitter.com/bhargav_achary)
 - **Email**: [bhargav.achary13@gmail.com](mailto:bhargav.achary13@gmail.com)
 
