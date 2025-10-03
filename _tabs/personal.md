@@ -2,39 +2,37 @@
 layout: page
 icon: fas fa-heart
 order: 5
-title: Downtime
+title: Beyond the Code
 ---
 
-<div style="text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white; margin: 2rem 0;">
-  <h1 style="margin-bottom: 1rem; font-size: 2.5rem;">💖</h1>
-  <h2 style="margin-bottom: 1rem; font-weight: 300;">Welcome to My Downtime</h2>
-  <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">Where creativity meets connection</p>
-  <a href="https://bhargavachary.in" target="_blank" style="background: rgba(255,255,255,0.2); padding: 1rem 2rem; border-radius: 30px; color: white; text-decoration: none; font-weight: 500; font-size: 1.1rem; transition: all 0.3s; display: inline-block; border: 2px solid rgba(255,255,255,0.3);">
-    Visit BhargavAchary.in →
-  </a>
-</div>
+## A Different Lens
 
-<div style="text-align: center; margin: 3rem 0; padding: 2rem;">
-  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-    <div style="text-align: center;">
-      <div style="font-size: 3rem; margin-bottom: 0.5rem;">📸</div>
-      <p style="color: #6c757d; font-weight: 500;">Photography</p>
-    </div>
-    <div style="text-align: center;">
-      <div style="font-size: 3rem; margin-bottom: 0.5rem;">🎬</div>
-      <p style="color: #6c757d; font-weight: 500;">Stories</p>
-    </div>
-    <div style="text-align: center;">
-      <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏛️</div>
-      <p style="color: #6c757d; font-weight: 500;">Culture</p>
-    </div>
-    <div style="text-align: center;">
-      <div style="font-size: 3rem; margin-bottom: 0.5rem;">💭</div>
-      <p style="color: #6c757d; font-weight: 500;">Thoughts</p>
-    </div>
-  </div>
-  
-  <p style="color: #6c757d; font-style: italic; font-size: 1.1rem; max-width: 500px; margin: 0 auto;">
-    "Where engineering meets creativity, and technology serves humanity"
-  </p>
-</div>
+Outside the world of processors and architectures, I find meaning in simpler, quieter pursuits.
+
+Growing up in Odisha, I learned that life's richest lessons often come from unexpected places—village roads, family gatherings, train journeys across India's heartland. These experiences shaped how I see the world, both as an engineer and as someone trying to understand what it means to be human in a rapidly changing time.
+
+## What You'll Find
+
+On my personal blog, I write about the parts of life that don't fit neatly into technical specs:
+
+**Photography & Visual Stories**
+Capturing moments that remind us to pause—landscapes, culture, and everyday beauty.
+
+**Reflections & Essays**
+Thoughts on society, mental health, education, and the stories we inherit from those who came before us.
+
+**Cultural Narratives**
+Exploring Indian traditions, regional diversity, and the threads that connect us across languages and geographies.
+
+**Life Observations**
+From navigating Bengaluru's traffic to grappling with loss, the human side of this engineering journey.
+
+## A Gentler Pace
+
+This space exists because not everything worth sharing fits into a technical deep dive. Sometimes the most important conversations happen when we step away from the keyboard.
+
+If you're curious about the person behind the technical analysis, or simply want to explore life beyond silicon and systems, visit **[BhargavAchary.in](https://bhargavachary.in)**.
+
+---
+
+*Between debugging sessions and architecture reviews, I try to remember that technology exists to serve humanity—not the other way around.*
