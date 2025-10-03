@@ -2,7 +2,7 @@
 layout: page
 icon: fas fa-heart
 order: 5
-title: Beyond the Code
+title: Personal
 ---
 
 ## A Different Lens
