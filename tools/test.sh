@@ -54,14 +54,26 @@ main() {
     rm -rf "$SITE_DIR"
   fi
 
-  # Ensure we don't use stale vendor gems from an incompatible Ruby
-  # If vendor/bundle exists for a different Ruby (e.g., 2.6.0) it can break ffi/sassc
-  if [[ -d vendor/bundle/ruby ]]; then
-    if [[ -n "$(ls -1 vendor/bundle/ruby | grep -v "$(ruby -e 'print RUBY_VERSION.split(".")[0,2].join(".")')")" ]]; then
-      echo "> Detected vendor/bundle for a different Ruby version; removing vendor/bundle to avoid native extension errors"
+  # Ensure we don't use stale vendor gems from an incompatible architecture or Ruby
+  if [[ -d vendor/bundle ]]; then
+    # If on Apple Silicon but vendor contains x86_64 prebuilt gems, purge
+    if [[ "$(uname -m)" == "arm64" ]] && grep -q "x86_64-darwin" -r vendor/bundle 2>/dev/null; then
+      echo "> Detected x86_64 prebuilt gems on arm64; removing vendor/bundle to avoid ffi/sassc errors"
       rm -rf vendor/bundle
     fi
+    # If vendor folder Ruby ABI doesn't match current Ruby major.minor, purge
+    if [[ -d vendor/bundle/ruby ]]; then
+      current_ruby_mm="$(ruby -e 'print RUBY_VERSION.split(".")[0,2].join(".")')"
+      if ! ls -1 vendor/bundle/ruby | grep -q "^${current_ruby_mm}\."; then
+        echo "> Detected vendor gems for a different Ruby (${current_ruby_mm} mismatch); removing vendor/bundle"
+        rm -rf vendor/bundle
+      fi
+    fi
   fi
+
+  # Ensure dependencies are installed
+  bundle config set path 'vendor/bundle' >/dev/null
+  bundle install --without development test --jobs 4 --retry 2
 
   read_baseurl
 

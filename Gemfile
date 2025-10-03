@@ -1,5 +1,5 @@
-# Gemfile optimized for GitHub Pages only
-# Do not run `bundle install` locally with Ruby 2.6
+# Gemfile optimized for GitHub Pages builds
+# Note: Avoid committing platform-specific Gemfile.lock from local machines.
 
 source "https://rubygems.org"
 
