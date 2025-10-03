@@ -6,6 +6,9 @@ categories: [AI, Hardware, Machine Learning]
 tags: [edge-ai, llms, apple-silicon, qualcomm, amd, intel, inference, quantization, llama-cpp]
 toc: true
 description: "M-series, Snapdragon X Elite, AMD Phoenix, Intel Meteor Lake — the most powerful SoCs ever made for consumers. But even they struggle with running large language models locally. Here's why edge AI inference hits roadblocks, and what the future holds."
+image:
+  path: /images/posts/edge-ai-computing.jpg
+  alt: "Edge AI Inference: Built Like a Rocket, Stuck in Bangalore Traffic"
 ---
 
 M-series, Snapdragon X Elite, AMD Phoenix, Intel Meteor Lake — the most powerful SoCs ever made for consumers. But even they struggle with running large language models locally. Here's why edge AI inference hits roadblocks, and what the future holds.
