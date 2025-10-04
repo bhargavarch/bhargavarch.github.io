@@ -1,0 +1,138 @@
+---
+---
+
+/**
+ * Enhanced Post Navigation (Previous/Next)
+ * Better visual design with post metadata and hover effects
+ */
+
+.post-navigation {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 2px solid var(--main-border-color);
+  border-bottom: 2px solid var(--main-border-color);
+
+  .btn {
+    flex: 1;
+    min-width: 0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: var(--main-border-color);
+    background: var(--card-header-bg);
+
+    &:not(.disabled) {
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-color: var(--link-color);
+
+        p {
+          color: var(--link-color);
+        }
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+      background: var(--button-bg);
+    }
+
+    p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--text-color);
+      transition: color 0.2s ease;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    // Direction indicators
+    &:first-child:not(.disabled)::before {
+      content: '← ';
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      font-size: 20px;
+      color: var(--link-color);
+      opacity: 0.5;
+      transition: opacity 0.2s ease;
+    }
+
+    &:last-child:not(.disabled)::before {
+      content: ' →';
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      font-size: 20px;
+      color: var(--link-color);
+      opacity: 0.5;
+      transition: opacity 0.2s ease;
+    }
+
+    &:focus-visible {
+      outline: 3px solid var(--focus-ring-color);
+      outline-offset: 4px;
+    }
+  }
+}
+
+// Dark mode
+html[data-mode='dark'] {
+  .post-navigation {
+    .btn {
+      background: var(--main-bg);
+
+      &:not(.disabled):hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .post-navigation {
+    flex-direction: column !important;
+    gap: 16px;
+
+    .btn {
+      width: 100%;
+
+      p {
+        font-size: 14px;
+      }
+
+      &:first-child::before,
+      &:last-child::before {
+        top: 8px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .post-navigation {
+    .btn {
+      transition-duration: 0.01ms !important;
+
+      &:not(.disabled):hover {
+        transform: none;
+      }
+    }
+  }
+}

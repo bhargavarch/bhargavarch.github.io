@@ -1,0 +1,72 @@
+---
+---
+
+/**
+ * Enhanced Breadcrumb Navigation
+ * Better visual hierarchy and structured data
+ */
+
+#breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-muted-color);
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:not(:last-child)::after {
+      content: '›';
+      color: var(--text-muted-color);
+      font-size: 16px;
+      opacity: 0.5;
+    }
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    &:hover {
+      background: var(--button-bg);
+      color: var(--link-color);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--focus-ring-color);
+      outline-offset: 2px;
+    }
+  }
+
+  span:last-child {
+    color: var(--text-color);
+    font-weight: 500;
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  #breadcrumb {
+    font-size: 13px;
+
+    span {
+      max-width: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  #breadcrumb a {
+    transition-duration: 0.01ms !important;
+  }
+}

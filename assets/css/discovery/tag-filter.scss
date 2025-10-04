@@ -1,0 +1,142 @@
+---
+---
+
+/**
+ * Tag Filtering System Styles
+ */
+
+.tag-filter-search {
+  margin-bottom: 2rem;
+
+  .search-box {
+    position: relative;
+    max-width: 500px;
+
+    i.fa-search {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted-color);
+      pointer-events: none;
+    }
+
+    .tag-search-input {
+      width: 100%;
+      padding: 12px 48px 12px 48px;
+      font-size: 16px;
+      border: 2px solid var(--main-border-color);
+      border-radius: 12px;
+      background: var(--main-bg);
+      color: var(--text-color);
+      transition: all 0.2s ease;
+
+      &:focus {
+        outline: none;
+        border-color: var(--link-color);
+        box-shadow: 0 0 0 4px rgba(74, 158, 255, 0.1);
+      }
+
+      &::placeholder {
+        color: var(--text-muted-color);
+      }
+    }
+
+    .clear-search {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-muted-color);
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: var(--button-bg);
+        color: var(--text-color);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--focus-ring-color);
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  .tag-count-info {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--text-muted-color);
+
+    #visible-count {
+      color: var(--link-color);
+      font-weight: 600;
+    }
+  }
+}
+
+.no-results-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted-color);
+
+  i {
+    color: var(--text-muted-color);
+    opacity: 0.5;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+// Dark mode
+html[data-mode='dark'] {
+  .tag-filter-search {
+    .search-box {
+      .tag-search-input {
+        background: var(--card-header-bg);
+
+        &:focus {
+          box-shadow: 0 0 0 4px rgba(138, 180, 248, 0.1);
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .tag-filter-search {
+    .search-box {
+      max-width: 100%;
+
+      .tag-search-input {
+        font-size: 14px;
+        padding: 10px 40px 10px 40px;
+      }
+    }
+
+    .tag-count-info {
+      font-size: 13px;
+    }
+  }
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .tag-filter-search {
+    .search-box {
+      .tag-search-input,
+      .clear-search {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  }
+}

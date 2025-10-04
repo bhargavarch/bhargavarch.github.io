@@ -1,0 +1,114 @@
+<!-- Popular Posts Widget - Simulated based on recency and engagement -->
+
+{% assign popular_posts = '' | split: '' %}
+{% assign current_date = 'now' | date: '%s' | plus: 0 %}
+{% assign ninety_days_ago = current_date | minus: 7776000 %}
+
+<!-- Calculate engagement score for recent posts -->
+{% assign scored_posts = '' | split: '' %}
+
+{% for post in site.posts limit: 50 %}
+  {% assign post_date = post.date | date: '%s' | plus: 0 %}
+
+  {% if post_date >= ninety_days_ago %}
+    {% assign recency_score = post_date | minus: ninety_days_ago | divided_by: 86400 %}
+    {% assign tag_score = post.tags.size | times: 2 %}
+    {% assign category_score = post.categories.size | times: 3 %}
+    {% assign title_score = post.title.size | divided_by: 10 %}
+
+    {% assign engagement_score = recency_score | plus: tag_score | plus: category_score | plus: title_score %}
+
+    {% capture scored_item %}{{ engagement_score }}|||{{ post.url }}|||{{ post.title }}|||{{ post.date }}|||{{ post.image.path | default: post.image }}{% endcapture %}
+    {% assign scored_posts = scored_posts | push: scored_item %}
+  {% endif %}
+{% endfor %}
+
+<!-- Sort by score and take top 5 -->
+{% if scored_posts.size > 0 %}
+  {% assign scored_posts = scored_posts | sort | reverse %}
+
+  <aside id="popular-posts" class="mb-4" aria-labelledby="popular-label">
+    <h3 class="panel-heading mb-3" id="popular-label">
+      <i class="fas fa-fire-alt me-2"></i>Popular Posts
+    </h3>
+    <div class="popular-posts-list">
+      {% for item in scored_posts limit: 5 %}
+        {% assign parts = item | split: '|||' %}
+        {% assign post_url = parts[1] %}
+        {% assign post_title = parts[2] %}
+        {% assign post_date = parts[3] %}
+        {% assign post_image = parts[4] %}
+
+        {% assign post_obj = site.posts | where: 'url', post_url | first %}
+
+        <article class="popular-post-item">
+          <a href="{{ post_url | relative_url }}" class="popular-post-link">
+            {% if post_image and post_image != '' %}
+              <div class="popular-post-thumb">
+                <img src="{{ post_image }}" alt="{{ post_title }}" loading="lazy">
+              </div>
+            {% else %}
+              <div class="popular-post-thumb placeholder">
+                <i class="fas fa-file-alt"></i>
+              </div>
+            {% endif %}
+
+            <div class="popular-post-content">
+              <h4 class="popular-post-title">{{ post_title }}</h4>
+              <div class="popular-post-meta">
+                <time datetime="{{ post_date | date_to_xmlschema }}">
+                  {{ post_date | date: '%b %d, %Y' }}
+                </time>
+                {% if post_obj.categories.size > 0 %}
+                  <span class="popular-post-category">
+                    <i class="far fa-folder-open fa-fw me-1"></i>
+                    {{ post_obj.categories | first }}
+                  </span>
+                {% endif %}
+              </div>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </aside>
+{% else %}
+  <!-- Fallback: Show 5 most recent posts -->
+  <aside id="popular-posts" class="mb-4" aria-labelledby="popular-label">
+    <h3 class="panel-heading mb-3" id="popular-label">
+      <i class="fas fa-fire-alt me-2"></i>Recent Posts
+    </h3>
+    <div class="popular-posts-list">
+      {% for post in site.posts limit: 5 %}
+        <article class="popular-post-item">
+          <a href="{{ post.url | relative_url }}" class="popular-post-link">
+            {% if post.image.path or post.image %}
+              <div class="popular-post-thumb">
+                <img src="{{ post.image.path | default: post.image }}" alt="{{ post.title }}" loading="lazy">
+              </div>
+            {% else %}
+              <div class="popular-post-thumb placeholder">
+                <i class="fas fa-file-alt"></i>
+              </div>
+            {% endif %}
+
+            <div class="popular-post-content">
+              <h4 class="popular-post-title">{{ post.title }}</h4>
+              <div class="popular-post-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: '%b %d, %Y' }}
+                </time>
+                {% if post.categories.size > 0 %}
+                  <span class="popular-post-category">
+                    <i class="far fa-folder-open fa-fw me-1"></i>
+                    {{ post.categories | first }}
+                  </span>
+                {% endif %}
+              </div>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </aside>
+{% endif %}
