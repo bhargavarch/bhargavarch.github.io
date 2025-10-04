@@ -83,7 +83,8 @@ tail_includes:
 
   <!-- Comments Section - Moved here to appear immediately after content -->
   {% if page.comments and site.comments.active %}
-    <div class="post-comments mt-5 mb-5">
+    <hr class="my-5">
+    <div class="post-comments mb-5">
       {% include comments.html lang=lang %}
     </div>
   {% endif %}
