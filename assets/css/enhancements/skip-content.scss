@@ -1,0 +1,42 @@
+---
+---
+
+/**
+ * Skip to Content Link
+ * WCAG 2.1 Level A - Bypass Blocks requirement
+ */
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--link-color, #4a9eff);
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+  transition: top 0.2s ease;
+
+  &:focus {
+    top: 0;
+    outline: 3px solid var(--focus-ring-color, #4a9eff);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    background: var(--link-underline-color, #3578c7);
+    text-decoration: underline;
+  }
+}
+
+// Dark mode
+html[data-mode='dark'] .skip-to-content {
+  background: var(--link-color, #8ab4f8);
+  color: #000;
+
+  &:hover {
+    background: var(--link-underline-color, #a8c7fa);
+  }
+}

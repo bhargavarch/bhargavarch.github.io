@@ -1,0 +1,37 @@
+---
+---
+
+/* Comments section separator styling for both light and dark themes */
+
+.post-comments {
+  hr {
+    border: 0;
+    height: 1px;
+    background: var(--main-border-color);
+    opacity: 0.5;
+  }
+}
+
+/* Light mode specific styling */
+@media (prefers-color-scheme: light) {
+  html:not([data-mode]) .post-comments hr {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+html[data-mode='light'] .post-comments hr {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode specific styling */
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) .post-comments hr {
+    background: var(--main-border-color);
+    opacity: 0.5;
+  }
+}
+
+html[data-mode='dark'] .post-comments hr {
+  background: var(--main-border-color);
+  opacity: 0.5;
+}

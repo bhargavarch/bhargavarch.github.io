@@ -1,0 +1,154 @@
+---
+---
+
+/**
+ * Toast Notification Styles
+ * Modern, accessible notifications with smooth animations
+ */
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+
+  @media (max-width: 768px) {
+    left: 20px;
+    right: 20px;
+    max-width: none;
+  }
+}
+
+.toast {
+  pointer-events: all;
+  background: var(--card-header-bg, #fff);
+  border-left: 4px solid var(--link-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 300px;
+
+  @media (max-width: 768px) {
+    min-width: auto;
+  }
+
+  &.toast-show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &.toast-hide {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.toast-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+
+  i {
+    display: block;
+  }
+}
+
+.toast-message {
+  color: var(--text-color, #333);
+  font-size: 14px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: var(--text-muted-color, #666);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: 1;
+
+  &:hover {
+    background: var(--button-bg, rgba(0, 0, 0, 0.05));
+    color: var(--text-color, #333);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--focus-ring-color, #4a9eff);
+    outline-offset: 2px;
+  }
+}
+
+// Toast type variants
+.toast-success {
+  border-left-color: #22c55e;
+
+  .toast-icon {
+    color: #22c55e;
+  }
+}
+
+.toast-info {
+  border-left-color: #3b82f6;
+
+  .toast-icon {
+    color: #3b82f6;
+  }
+}
+
+.toast-warning {
+  border-left-color: #f59e0b;
+
+  .toast-icon {
+    color: #f59e0b;
+  }
+}
+
+.toast-error {
+  border-left-color: #ef4444;
+
+  .toast-icon {
+    color: #ef4444;
+  }
+}
+
+// Dark mode adjustments
+html[data-mode='dark'] {
+  .toast {
+    background: var(--card-header-bg, #1e1e1e);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .toast-close:hover {
+    background: var(--button-bg, rgba(255, 255, 255, 0.1));
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    transition-duration: 0.01ms !important;
+  }
+}
