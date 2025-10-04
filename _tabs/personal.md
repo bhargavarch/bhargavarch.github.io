@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: personal
 icon: fas fa-heart
 order: 5
-title: Personal
+title: Personal - BhargavAchary.in
 ---
 
 ## A Different Lens
@@ -32,6 +32,14 @@ From navigating Bengaluru's traffic to grappling with loss, the human side of th
 This space exists because not everything worth sharing fits into a technical deep dive. Sometimes the most important conversations happen when we step away from the keyboard.
 
 If you're curious about the person behind the technical analysis, or simply want to explore life beyond silicon and systems, visit **[BhargavAchary.in](https://bhargavachary.in)**.
+
+---
+
+<div style="text-align: center; margin: 3rem 0;">
+  <a href="https://bhargavachary.in" class="btn-personal-space" style="display: inline-block; padding: 1.2rem 3rem; font-size: 1.2rem; font-weight: 600; color: #fff; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50px; text-decoration: none; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); transition: all 0.3s ease; border: none;">
+    🌟 Visit BhargavAchary.in
+  </a>
+</div>
 
 ---
 

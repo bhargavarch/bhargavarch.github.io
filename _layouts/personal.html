@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+<article class="px-1">
+  {% if page.layout == 'personal' or page.collection == 'tabs' %}
+    {% assign tab_key = page.title | downcase %}
+    {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+    <h1 class="dynamic-title">
+      Personal - <a href="https://bhargavachary.in" style="color: #4a9eff; text-decoration: none; border-bottom: 2px solid rgba(74, 158, 255, 0.3); transition: all 0.2s ease;">BhargavAchary.in</a>
+    </h1>
+    <div class="content">
+      {{ content }}
+    </div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+</article>
