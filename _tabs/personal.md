@@ -1,8 +1,9 @@
 ---
 layout: personal
 icon: fas fa-heart
-order: 5
+order: 6
 title: Personal - BhargavAchary.in
+menu_title: Personal
 ---
 
 ## A Different Lens

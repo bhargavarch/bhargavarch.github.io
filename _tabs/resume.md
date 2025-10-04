@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-file-alt
-order: 6
+order: 2
 title: Resume
 ---
 
